@@ -8,7 +8,7 @@ MODELS_DEV_URL = "https://models.dev/api.json"
 GITHUB_COPILOT_PROVIDER_ID = "github-copilot"
 
 # GitHub OAuth Device Flow + Copilot token exchange (mirrors opencode behavior)
-CLIENT_ID = "Iv1.b507a08c87ecfe98"
+CLIENT_ID = "Ov23ctDVkRmgkPke0Mmm"
 DEVICE_CODE_URL = "https://github.com/login/device/code"
 ACCESS_TOKEN_URL = "https://github.com/login/oauth/access_token"
 COPILOT_TOKEN_URL = "https://api.github.com/copilot_internal/v2/token"
@@ -52,7 +52,7 @@ def start_device_flow():
             "Content-Type": "application/json",
             "User-Agent": UA,
         },
-        json={"client_id": CLIENT_ID, "scope": "read:user"},
+        json={"client_id": CLIENT_ID, "scope": "read:user,read:org,repo,gist"},
         timeout=30,
     )
     resp.raise_for_status()

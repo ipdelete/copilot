@@ -84,7 +84,7 @@ Both tools share a common authentication flow:
 
 ### Configuration
 
-- **CLIENT_ID**: GitHub OAuth app client ID (Iv1.b507a08c87ecfe98)
+- **CLIENT_ID**: GitHub OAuth app client ID (Ov23ctDVkRmgkPke0Mmm)
 - **MODEL**: Optional environment variable to specify the model
 - **USER_AGENT**: Configured to match VS Code extension
 
